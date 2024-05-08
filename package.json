@@ -1,0 +1,26 @@
+{
+  "name": "lucid",
+  "version": "1.0.0",
+  "description": "Create Cardano wallets and send Cardano native fiat tokens.",
+  "main": "dist/index.js",
+  "module": "dist/index.m.js",
+  "unpkg": "dist/index.umd.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "rm -rf dist && microbundle --tsconfig tsconfig.json --no-sourcemap",
+    "dev": "microbundle --watch --tsconfig tsconfig.json --no-sourcemap"
+  },
+  "author": "Harun Mwangi",
+  "license": "MIT",
+  "dependencies": {
+    "lucid-cardano": "^0.10.7"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "microbundle": "^0.15.1",
+    "typescript": "5.4.5"
+  },
+  "files": [
+    "dist"
+  ]
+}
